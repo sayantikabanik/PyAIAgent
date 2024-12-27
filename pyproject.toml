@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyaiagent"
+version = "0.1.0"
+description = "A simple Python package to create AI agents"
+readme = "README.md"
+authors = [
+    {name = "Sayantika Banik", email = "workwith.sayantika@gmail.com"}
+]
+license = {text = "MIT"}
+homepage = "https://github.com/sayantikabanik/PyAIAgent"
+requires-python = ">=3.7"
+
+[tool.hatch.metadata]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.dependencies]
+openai = "*"
+langchain = "*"
+transformers = "*"
+torch = "*"
