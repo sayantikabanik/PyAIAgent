@@ -1,2 +1,2 @@
 # PyAIAgent
-Qucik and easy package to work with AI agents
+Quick and easy package to work with AI agents
