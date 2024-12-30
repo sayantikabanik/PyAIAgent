@@ -1,18 +1,12 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[project]
+[tool.poetry]
 name = "pyaiagent"
 version = "0.1.0"
 description = "A simple Python package to create AI agents"
 readme = "README.md"
-authors = [
-    {name = "Sayantika Banik", email = "workwith.sayantika@gmail.com"}
-]
-license = {text = "MIT"}
+authors = ["Sayantika Banik <workwith.sayantika@gmail.com>"]
+license = "MIT"
+packages = [{include = "pyaiagent"}]
 homepage = "https://github.com/sayantikabanik/PyAIAgent"
-requires-python = ">=3.7"
 
 [tool.hatch.metadata]
 classifiers = [
@@ -21,8 +15,12 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-[project.dependencies]
+[tool.poetry.dependencies]
+python = "^3.7.0"
 openai = "*"
 langchain = "*"
 transformers = "*"
-torch = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
